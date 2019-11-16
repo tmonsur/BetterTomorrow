@@ -1,0 +1,105 @@
+<!DOCTYPE html> 
+<html> 
+<head>
+    <title>Better Tomorrow|Better Spending</title> 
+    
+    <!-----making it responsive------>
+	<meta name="viewport" content="width=1000, user-scalable=0" />
+	<meta charset="utf-8">
+	<meta name="author" content="Tayeba Monsur">
+	<meta name="description" content="Lehman Hackathon Project">
+	
+
+     
+     <link href="https://use.fontawesome.com/releases/v5.0.4/css/all.css" rel="stylesheet">
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	
+	
+	<!--------main stylesheet---->
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="stylebudget.css">
+	<!---------fonts-------->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-csv/0.71/jquery.csv-0.71.min.js"></script>
+    <script src="https://apis.google.com/js/api.js"></script>
+    <script src="https://www.googleapis.com/customsearch/v1?key=AIzaSyCCpqLVmhu9lUHWm6H01-HIZTktj1FB8c4&cx=016472378314453675630:xvk8n4zuhme&q="></script>
+    <script src="SearchGoogle.js"></script>
+    
+</head> 
+<body>
+<div id="navbar">
+<!---------navbar-------->
+<ul>
+	<li><a href="index.html"><i class="fa fa-home" style="color: black;"></i> Home</a></li>	
+	 
+	<!------Dropdown for options---->
+	<li class="dropdown">
+		<a href="davascript:void(0)" class="dropbtn"> <i class="far fa-window-restore" style="color: black" > Jump to</i><i class="fa fa-caret-down" style="color: black;"></i></a>
+		<div class="dropdown-content">
+		<a href="budgetintro.html" target="_self">Finance</a>
+		<a href="recycling.html" target="_self">Recycling</a>
+		<a href="mhealth.html" target="_self">Mental health</a>
+		</div>
+	</li>
+	
+	<!------Dropdown for about---->
+	<li class="dropdown">
+		<a href="davascript:void(0)" class="dropbtn"><i class="fa fa-question-circle" style="color: black;"></i> About <i class="fa fa-caret-down" style="color: black;"></i></a>
+		<div class="dropdown-content">
+		<a href="developer.html" target="_self">Developer</a>
+		<a href="contact.html" target="_self">Contact Us</a>
+		</div>
+	</li>
+</ul>
+
+<script>
+// When the user scrolls down 20px from the top of the document, slide down the navbar
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 0 || document.documentElement.scrollTop > 0) {
+    document.getElementById("navbar").style.top = "0";
+  } else {
+    document.getElementById("navbar").style.top = "0";
+  }
+}
+</script>
+</div>
+	<!------End of nav bar------->
+    
+       
+       
+        <!------Container for google api------->
+      <div class="container">
+         <h2>Search with Google</h2>
+         <br>
+         <!------Search funtionality------->
+         <div class="limit" id="limit">
+             <form id="limit" class="limit" action="javascript:void(0);">
+                 <input type="text" id="limit1" placeholder="Enter your budget limit" name="input">
+                 <button id="submit" type="submit" class="button">Input</button>
+             </form>
+         </div>
+         
+         <div class="SearchBar">
+            <form id="searchbar" class="search" action="javascript:void(0);">
+               <input type="text" id="googlesearch"  placeholder="Eg.Shoes, gloves" name="search">
+               <button id="submit" type="submit" class="button"><i class="fa fa-search"></i> Search</button>
+            </form>
+         </div>
+        
+        <!------Show result---->
+        <div class="output" id="res" style="display: none">
+        </div>
+     </div>
+       
+      
+       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+       <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script> 
+       <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+       <script src="SearchGoogle.js"></script>
+</body> 
+</html>
+

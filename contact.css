@@ -1,0 +1,63 @@
+/*backgorund layout*/
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Staatliches&display=swap');
+.wrapper{
+    width:100%;
+}
+body{
+	min-height: 75rem;
+  	padding-top: 4.5rem;
+	background: url('hk.gif') no-repeat center center fixed;
+	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	background-size: cover;
+  	-o-background-size: cover;
+    border: 1px solid transparent;
+	} 
+.contact-form{
+    margin: auto;
+}
+form{
+    
+    margin-top: 50px;
+    transform: all 4s ease-in-out;
+    text-align: center;
+    width: 800px;
+    height: 450px;
+    margin: auto;
+    border: 3px solid;
+    border-color: lightpink;  
+}
+
+.form-control{
+    width: 600px;
+    background: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid gray;
+    color: darkblue;
+    font-size: 18px;
+    margin-bottom: 5px;
+    text-align: center;
+
+}
+
+input{
+    height: 45px;
+}
+
+form .submit{
+    background: paleturquoise;
+    border-color: transparent;
+    margin-top: 20px;
+    color: darkblue;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    height: 50px;
+}
+
+form .submit:hover{
+    cursor: pointer;
+    background-color: palegreen;
+}

@@ -1,0 +1,76 @@
+<!DOCTYPE html> 
+<html> 
+<head>
+    <title>CS 355 | About Us</title> 
+	<meta name="viewport" content="width=1000, user-scalable=0" />
+	<meta charset="utf-8">
+	<meta name="author" content="Tayeba Monsur">
+	<meta name="description" content="CS355 project">
+	
+
+     
+     <link href="https://use.fontawesome.com/releases/v5.0.4/css/all.css" rel="stylesheet">
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	
+	
+	<!--------main stylesheet---->
+    <link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="devstyle.css">
+	
+	
+	<!---------fonts-------->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head> 
+<body>
+<!---------navbar-------->
+<div id="navbar">
+<!---------navbar-------->
+<ul>
+	<li><a href="index.html"><i class="fa fa-home" style="color: black;"></i> Home</a></li>	
+	 
+	<!------Dropdown for options---->
+	<li class="dropdown">
+		<a href="davascript:void(0)" class="dropbtn"> <i class="far fa-window-restore" style="color: black" > Jump to</i><i class="fa fa-caret-down" style="color: black;"></i></a>
+		<div class="dropdown-content">
+		<a href="budget.html" target="_self">Finance</a>
+		<a href="recycling.html" target="_self">Recycling</a>
+		<a href="mhealth.html" target="_self">Mental health</a>
+		</div>
+	</li>
+	
+	<!------Dropdown for about---->
+	<li class="dropdown">
+		<a href="davascript:void(0)" class="dropbtn"><i class="fa fa-question-circle" style="color: black;"></i> About <i class="fa fa-caret-down" style="color: black;"></i></a>
+		<div class="dropdown-content">
+		<a href="developer.html" target="_self">Developer</a>
+		<a href="contact.html" target="_self">Contact Us</a>
+		</div>
+	</li>
+</ul>
+<!----------navbar script--------->
+<script>
+// When the user scrolls down 20px from the top of the document, slide down the navbar
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    document.getElementById("navbar").style.top = "0px";
+  } else {
+    document.getElementById("navbar").style.top = "0px";
+  }
+}
+</script>
+</div>
+	
+ <div class="containerdev">
+        <h1>Tayeba Monsur</h1><br>
+        <img class="resize" src="me.jpg"  alt="Developer"><br>
+        <h3>Hi! &#128075; My name is Tayeba Monsur. &#128512; <br> I am a senior in Queens College, majoring in Computer Science. &#128187;<br> Thank you for checking out my website! &#128150;</h3><br><br><br><br><br>
+        <a href="https://github.com/tmonsur000" target="_blank"><i class="fab fa-github-square fa-3x" style="color:darkblue;"></i></a>&emsp;
+        <a href="https://www.linkedin.com/in/tayeba-monsur/" target="_blank"><i class="fab fa-linkedin fa-3x" style="color:darkblue;"></i></a>
+</div>
+	
+	
+	
+</body> 
+</html>

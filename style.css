@@ -1,0 +1,243 @@
+/*backgorund layout*/
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Staatliches&display=swap');
+
+body{
+	min-height: 75rem;
+  	padding-top: 4.5rem;
+	background: url('bg1.gif') no-repeat center center fixed;
+	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	background-size: cover;
+  	-o-background-size: cover;
+    margin: inherit;
+    border: 1px solid transparent;
+	} 
+
+/*navbar layout*/ 
+#navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: block;
+  transition: top 0.3s;
+    z-index: 99999;
+}
+
+ul{
+	list-style-type: none; 
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: ghostwhite;
+    }	 
+
+li { 
+	float: left; 
+	} 
+
+li a, .dropbtn { 
+  	display: inline-block; 
+	color: black; 
+	text-align: center; 
+	padding: 14px 16px; 
+	text-decoration: none;
+	} 
+
+li a:hover, .dropdown:hover .dropbtn { 
+	background-color: lightpink;
+	}
+
+li.dropdown {
+	display: block;
+	}
+
+.dropdown-content {
+ 	display: none; 
+	position: absolute; 
+	background-color: #f9f9f9; 
+	min-width: 160px; 
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); 
+  	z-index: 1;
+	}
+
+.dropdown-content a {
+  	color: black; 
+	padding: 12px 16px; 
+	text-decoration: none; 
+	display: block; 
+	text-align: left;
+	}
+
+.dropdown-content a:hover {
+	background-color: palegreen;
+	} 
+
+.dropdown:hover .dropdown-content {
+ 	display: block;
+	}
+
+/*index content layout*/
+.container1{
+    text-align: center;
+    width: 480px;
+    margin: auto;
+    border: 3px solid;
+    border-color: lightpink;
+    background-color:transparent;
+	padding-top: .1rem;
+    padding-bottom: 1rem;
+    -webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+}
+
+h1{
+    text-align: center;
+    font-size: 30px;
+    color: ghostwhite;
+}
+
+p{
+    font-size: 20px;
+    color: ghostwhite;
+    background-blend-mode: darken;
+}
+
+
+.container2 {
+  position: relative;
+  width: 100%;
+  max-width: 400px;
+}
+
+.container3 {
+  position: relative;
+  width: 100%;
+  max-width: 400px;
+}
+
+.container4 {
+  position: relative;
+  width: 100%;
+  max-width: 400px;
+}
+
+.container2 {
+  width: 100%;
+  height: auto;
+}
+
+.container3 {
+  width: 100%;
+  height: auto;
+}
+
+.container4 {
+  width: 100%;
+  height: auto;
+}
+
+.container2 .btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: lightpink;
+  color: black;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+  
+}
+
+.container3 .btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: lightpink;
+  color: black;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.container4 .btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: lightpink;
+  color: black;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.container2 .btn:hover {
+  background-color: black;
+  color: white;
+}
+
+.container3 .btn:hover {
+  background-color: black;
+    color: white;
+}
+
+.container4 .btn:hover {
+  background-color: black;
+    color: white;
+}
+
+/* Three image containers (use 25% for four, and 50% for two, etc) */
+.container2{
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+.container3{
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+.container4{
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+.row{
+    text-align: center;
+    width: 1230px;
+    margin: auto;
+    background-color:transparent;
+	padding-top: .1rem;
+    padding-bottom: 1rem;
+    -webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+}
+/* Clear floats after image containers */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+
+

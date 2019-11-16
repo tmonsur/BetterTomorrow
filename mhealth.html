@@ -1,0 +1,130 @@
+<!DOCTYPE html> 
+<html> 
+<head>
+    <title>Better Tomorrow|Better Mental Health</title> 
+    
+    <!-----making it responsive------>
+	<meta name="viewport" content="width=1000, user-scalable=0" />
+	<meta charset="utf-8">
+	<meta name="author" content="Tayeba Monsur">
+	<meta name="description" content="Lehman Hackathon Project">
+	
+
+     
+     <link href="https://use.fontawesome.com/releases/v5.0.4/css/all.css" rel="stylesheet">
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	
+	
+	<!--------main stylesheet---->
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="panicstyle.css">
+	
+	<!---------fonts-------->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+</head> 
+<body>
+<div id="navbar">
+<!---------navbar-------->
+<ul>
+	<li><a href="index.html"><i class="fa fa-home" style="color: black;"></i> Home</a></li>	
+	 
+	<!------Dropdown for options---->
+	<li class="dropdown">
+		<a href="davascript:void(0)" class="dropbtn"> <i class="far fa-window-restore" style="color: black" > Jump to</i><i class="fa fa-caret-down" style="color: black;"></i></a>
+		<div class="dropdown-content">
+		<a href="budgetintro.html" target="_self">Finance</a>
+		<a href="recycling.html" target="_self">Recycling</a>
+		<a href="mhealth.html" target="_self">Mental health</a>
+		</div>
+	</li>
+	
+	<!------Dropdown for about---->
+	<li class="dropdown">
+		<a href="davascript:void(0)" class="dropbtn"><i class="fa fa-question-circle" style="color: black;"></i> About <i class="fa fa-caret-down" style="color: black;"></i></a>
+		<div class="dropdown-content">
+		<a href="developer.html" target="_self">Developer</a>
+		<a href="contact.html" target="_self">Contact Us</a>
+		</div>
+	</li>
+</ul>
+
+<script>
+// When the user scrolls down 20px from the top of the document, slide down the navbar
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 0 || document.documentElement.scrollTop > 0) {
+    document.getElementById("navbar").style.top = "0";
+  } else {
+    document.getElementById("navbar").style.top = "0";
+  }
+}
+</script>
+</div>
+
+     <p>
+         <a href="#yes"></a> &nbsp;
+         <a href="#no"></a> &nbsp;
+         <a href="#vines"></a> &nbsp;
+      </p>
+        
+	<!------End of nav bar------->
+     <div class="container1">
+     <p>Press play for calming music</p>
+      <audio controls loop>
+      <source src="meditation.mp3" type="audio/mp3">
+         </audio></div>
+         <section class="start">
+          <div class="container1">
+         <p>Please choose a breathing pattern to concentrate on</p>
+         <img src="panic.gif" alt="Breathing gif" style="width:80%">
+         <img src="panic2.gif" alt="Breathing gif" style="width:80%">
+         <img src="panic3.gif" alt="Breathing gif" style="width:80%">
+         </div>
+        </section>
+       
+    <div class="container1"><p>Has this helped you calm down?</p><br><br>
+      <button id="yes" type="submit" class="button"><a href="mhealth.html#yes">Yes</a></button>
+      <button id="no" type="submit" class="button"><a href="mhealth.html#no">No</a></button>
+      </div>
+      
+       <section id="yes">
+           <div class="container1">
+           <p>Congratulations!!! You did well!!</p>
+           <p>Please go to this website for further help!</p>
+            <p>https://www.helpguide.org/</p>
+           </div> 
+       </section>
+       
+       
+        <section id="no">
+           <div class="container1">
+               <p>I am sorry you feel this way.</p><br><p>Let's do some simple activity to take your mind off!</p>
+               <br><p>Count how many stars. Dont worry. Theres no right or wrong answers</p>
+               <img src="stars.png" alt="stars">
+               <form action="/action_page.php">How many?<br><input type="text" name="lastname"><br><br>
+               <a href="mhealth.html#vines">Next</a>
+                </form> 
+           </div>   
+        </section>
+        <section id="vines">
+           <div class="container1">
+               <br><p>How many vine references did you get? Again there is no right or wrong answers</p>
+              <iframe width="450" height="315" src="https://www.youtube.com/embed/EoLjddNcnYU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              
+           </div>   
+        </section>
+        <div class="container1"><p>Has this helped you calm down?</p><br><br>
+      <button id="yes" type="submit" class="button"><a href="mhealth.html#yes">Yes</a></button>
+      <button id="no" type="submit" class="button"><a href="mhealth.html">No</a></button>
+      </div>
+        
+         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script> 
+        
+       
+</body> 
+</html>
+

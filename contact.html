@@ -1,0 +1,94 @@
+<!DOCTYPE html> 
+<html> 
+<head>
+    <title>CS 355 | Contact Form</title> 
+	<meta name="viewport" content="width=1000, user-scalable=0" />
+	<meta charset="utf-8">
+	<meta name="author" content="Tayeba Monsur">
+	<meta name="description" content="CS355 project">
+	
+
+     
+     <link href="https://use.fontawesome.com/releases/v5.0.4/css/all.css" rel="stylesheet">
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	
+	
+	<!--------main stylesheet---->
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="contact.css">
+    
+    
+	
+	<!---------fonts-------->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+</head> 
+<body>
+<div id="navbar">
+<!---------navbar-------->
+<ul>
+	<li><a href="index.html"><i class="fa fa-home" style="color: black;"></i> Home</a></li>	
+	 
+	<!------Dropdown for options---->
+	<li class="dropdown">
+		<a href="davascript:void(0)" class="dropbtn"> <i class="far fa-window-restore" style="color: black" > Jump to</i><i class="fa fa-caret-down" style="color: black;"></i></a>
+		<div class="dropdown-content">
+		<a href="budget.html" target="_self">Finance</a>
+		<a href="recycling.html" target="_self">Recycling</a>
+		<a href="mhealth.html" target="_self">Mental health</a>
+		</div>
+	</li>
+	
+	<!------Dropdown for about---->
+	<li class="dropdown">
+		<a href="davascript:void(0)" class="dropbtn"><i class="fa fa-question-circle" style="color: black;"></i> About <i class="fa fa-caret-down" style="color: black;"></i></a>
+		<div class="dropdown-content">
+		<a href="developer.html" target="_self">Developer</a>
+		<a href="contact.html" target="_self">Contact Us</a>
+		</div>
+	</li>
+</ul>
+	
+
+
+<script>
+// When the user scrolls down 20px from the top of the document, slide down the navbar
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 0 || document.documentElement.scrollTop > 0) {
+    document.getElementById("navbar").style.top = "0";
+  } else {
+    document.getElementById("navbar").style.top = "0";
+  }
+}
+</script>
+</div>
+	<!------End of nav bar------->
+	
+	<!------the home page content------>
+	
+	<!-----contact------>
+<h1>Please fill out this form!</h1>
+<div class="contact-form">
+    <form id="contact-from" method="post" action="contact.php">
+       <br>
+       <br>
+       <br>
+        <input name="name" type="text" class="form-control" placeholder="Your Name" color="red" required>
+        <br>
+        <br>
+        <br>
+        <input name="email" type="email" class="form-control" placeholder="Your Email" required>
+        <br>
+        <br>
+        <br>
+        <textarea name="message" class="form-control" placeholder="Your Message" row="10" required></textarea>
+        <br>
+        <br>
+        <br>
+        <input type="submit" class="form-control submit" value="Send Message">
+    </form>
+</div>
+</body> 
+</html>

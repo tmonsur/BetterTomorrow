@@ -1,0 +1,82 @@
+<!DOCTYPE html> 
+<html> 
+<head>
+    <title>Better Tomorrow|Better Budget</title> 
+    
+    <!-----making it responsive------>
+	<meta name="viewport" content="width=1000, user-scalable=0" />
+	<meta charset="utf-8">
+	<meta name="author" content="Tayeba Monsur">
+	<meta name="description" content="Lehman Hackathon Project">
+	
+
+     
+     <link href="https://use.fontawesome.com/releases/v5.0.4/css/all.css" rel="stylesheet">
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	
+	
+	<!--------main stylesheet---->
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="recyclestyle.css">
+	
+	<!---------fonts-------->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+</head> 
+<body>
+<div id="navbar">
+<!---------navbar-------->
+<ul>
+	<li><a href="index.html"><i class="fa fa-home" style="color: black;"></i> Home</a></li>	
+	 
+	<!------Dropdown for options---->
+	<li class="dropdown">
+		<a href="davascript:void(0)" class="dropbtn"> <i class="far fa-window-restore" style="color: black" > Jump to</i><i class="fa fa-caret-down" style="color: black;"></i></a>
+		<div class="dropdown-content">
+		<a href="budget.html" target="_self">Finance</a>
+		<a href="recycling.html" target="_self">Recycling</a>
+		<a href="mhealth.html" target="_self">Mental health</a>
+		</div>
+	</li>
+	
+	<!------Dropdown for about---->
+	<li class="dropdown">
+		<a href="davascript:void(0)" class="dropbtn"><i class="fa fa-question-circle" style="color: black;"></i> About <i class="fa fa-caret-down" style="color: black;"></i></a>
+		<div class="dropdown-content">
+		<a href="developer.html" target="_self">Developer</a>
+		<a href="contact.html" target="_self">Contact Us</a>
+		</div>
+	</li>
+</ul>
+
+<script>
+// When the user scrolls down 20px from the top of the document, slide down the navbar
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 0 || document.documentElement.scrollTop > 0) {
+    document.getElementById("navbar").style.top = "0";
+  } else {
+    document.getElementById("navbar").style.top = "0";
+  }
+}
+</script>
+</div>
+	<!------End of nav bar------->
+       
+         <div class="container1">
+        <h1>About better recycling<br></h1>
+        <p>Recycling is one of our 3 Rs: Reduce, Reuse, Recycle<p><br>
+        <p>It has become a very important necessity in the current climate issues.</p><br><p>I created a very simple game using HTML and CSS to help people understand what things can be recycled and what can't be.</p><br><p></p><br><p>Happy Gaming!</p>
+        <a href="game1.html" target="_self"><button id="button">Game Start</button></a>
+        </div>
+
+        
+         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script> 
+        
+       
+</body> 
+</html>
+
